@@ -25,7 +25,7 @@ export default function Login() {
       setLoading(true);
 
       const response = await axios.post(
-        "http://localhost:3000/api/login",
+        "https://own-ai-l7or.onrender.com/api/login",
         data,
         { withCredentials: true } // ⬅️ backend sets cookie
       );

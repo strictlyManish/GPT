@@ -13,7 +13,7 @@ import {
   Sparkles,
 } from "lucide-react";
 
-const socket = io("http://localhost:3000", {
+const socket = io("https://own-ai-l7or.onrender.com", {
   withCredentials: true,
 });
 
@@ -30,7 +30,7 @@ function Home() {
     const fetchChats = async () => {
       try {
         setLoading(true);
-        const res = await axios.get("http://localhost:3000/api", {
+        const res = await axios.get("https://own-ai-l7or.onrender.com/api", {
           withCredentials: true,
         });
         setChats(res.data.chats || []);
@@ -48,7 +48,7 @@ function Home() {
     setSidebarOpen(false);
     try {
       const res = await axios.get(
-        `http://localhost:3000/api/messages/${chatId}`,
+        `https://own-ai-l7or.onrender.com/api/messages/${chatId}`,
         { withCredentials: true }
       );
       setMessages(res.data.messages || []);
@@ -148,7 +148,7 @@ function Home() {
               if (!chat_title?.trim()) return;
               try {
                 const res = await axios.post(
-                  "http://localhost:3000/api/chat",
+                  "https://own-ai-l7or.onrender.com/api/chat",
                   { chat_title },
                   { withCredentials: true }
                 );

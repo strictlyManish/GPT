@@ -21,7 +21,7 @@ export default function Register() {
       setLoading(true);
 
       const response = await axios.post(
-        "http://localhost:3000/api/register",
+        "https://own-ai-l7or.onrender.com/api/register",
         data
       );
 
