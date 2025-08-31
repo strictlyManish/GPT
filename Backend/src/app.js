@@ -20,7 +20,7 @@ app.use("/api", auth)
 app.use("/api", chat)
 
 app.get("*name",(req,res)=>{
-    res.sendFile(path.join(__dirname,'../public'))
+    res.sendFile(path.join(__dirname,'../public/index.html'))
 })
 
 
