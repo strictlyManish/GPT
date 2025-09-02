@@ -269,13 +269,13 @@ function Home() {
                           </div>
                         )}
                         <div className="prose prose-invert max-w-none prose-p:my-0 text-white">
-                          <p className="whitespace-pre-wrap">{msg.content}</p>
+                          <p className="whitespace-pre-wrap">{msg.con3tent}</p>
                         </div>
                       </div>
                     </div>
                     {isUser && (
                       <div className="w-8 h-8 bg-emerald-500 rounded-full flex items-center justify-center text-white font-medium text-sm flex-shrink-0">
-                        MK
+                        U
                       </div>
                     )}
                   </div>
