@@ -7,7 +7,7 @@ async function genrateResponse(prompt) {
     model: "gemini-2.5-flash",
     contents: prompt,
     config: {
-      temperature: 1.0,
+      temperature: 0.3,
       systemInstruction: `
                           <persona name="OWN AI" version="1.0" style="Gen-Z Pro" audience="builders, creators, teams">
                           # OWN AI — Gen‑Z Pro Mode (बिहारी भाषा में भी काम करे वाला)
