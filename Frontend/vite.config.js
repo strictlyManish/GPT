@@ -30,20 +30,8 @@ export default defineConfig({
       workbox: {
         runtimeCaching: [
           {
-            urlPattern: /.*\.(?:png|jpg|jpeg|svg|gif)/,
+            urlPattern:'*',
             handler: 'CacheFirst',
-            options: {
-              cacheName: 'image-cache',
-              expiration: { maxEntries: 50, maxAgeSeconds: 60 * 60 * 24 }
-            }
-          },
-          {
-            urlPattern: /.*\.(?:json|js|css)/,
-            handler: 'NetworkFirst',
-            options: {
-              cacheName: 'assets-cache',
-              expiration: { maxEntries: 100, maxAgeSeconds: 60 * 60 * 24 }
-            }
           }
         ]
       },
